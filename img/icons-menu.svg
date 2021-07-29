@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" width="96px" height="96px">
+<defs>
+<linearGradient id="linear0" gradientUnits="userSpaceOnUse" x1="43.2365" y1="0.2365" x2="125.026077" y2="82.026077" gradientTransform="matrix(0.55814,0,0,0.55814,0,0)">
+<stop offset="0.237" style="stop-color:rgb(0.784314%,70.19608%,89.411765%);stop-opacity:1;"/>
+<stop offset="0.85" style="stop-color:rgb(93.333334%,24.313726%,78.823531%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear1" gradientUnits="userSpaceOnUse" x1="43.2365" y1="43.2365" x2="125.026077" y2="125.026077" gradientTransform="matrix(0.55814,0,0,0.55814,0,0)">
+<stop offset="0.237" style="stop-color:rgb(0.784314%,70.19608%,89.411765%);stop-opacity:1;"/>
+<stop offset="0.85" style="stop-color:rgb(93.333334%,24.313726%,78.823531%);stop-opacity:1;"/>
+</linearGradient>
+<linearGradient id="linear2" gradientUnits="userSpaceOnUse" x1="43.2365" y1="86.236504" x2="125.026077" y2="168.026077" gradientTransform="matrix(0.55814,0,0,0.55814,0,0)">
+<stop offset="0.237" style="stop-color:rgb(0.784314%,70.19608%,89.411765%);stop-opacity:1;"/>
+<stop offset="0.85" style="stop-color:rgb(93.333334%,24.313726%,78.823531%);stop-opacity:1;"/>
+</linearGradient>
+</defs>
+<g id="surface48227040">
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear0);" d="M 86 30 L 10 30 C 7.800781 30 6 28.199219 6 26 L 6 22 C 6 19.800781 7.800781 18 10 18 L 86 18 C 88.199219 18 90 19.800781 90 22 L 90 26 C 90 28.199219 88.199219 30 86 30 Z M 86 30 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear1);" d="M 86 54 L 10 54 C 7.800781 54 6 52.199219 6 50 L 6 46 C 6 43.800781 7.800781 42 10 42 L 86 42 C 88.199219 42 90 43.800781 90 46 L 90 50 C 90 52.199219 88.199219 54 86 54 Z M 86 54 "/>
+<path style=" stroke:none;fill-rule:nonzero;fill:url(#linear2);" d="M 86 78 L 10 78 C 7.800781 78 6 76.199219 6 74 L 6 70 C 6 67.800781 7.800781 66 10 66 L 86 66 C 88.199219 66 90 67.800781 90 70 L 90 74 C 90 76.199219 88.199219 78 86 78 Z M 86 78 "/>
+</g>
+</svg>
