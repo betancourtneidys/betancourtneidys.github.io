@@ -83,7 +83,7 @@ html {
 
 .hero {
   display: flex;
-  padding: 5rem;
+  padding: 4rem;
   background-color: rgba(243, 117, 226, 0.1);
 }
 
@@ -144,6 +144,28 @@ html {
     margin-right: 1rem;
   }
 
+  .hero {
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-presentation h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  .hero-presentation h2 {
+    font-size: 3rem;
+    margin-top: 0.1rem;
+    line-height: 5rem;
+  }
+
+  .hero-presentation button, .hero-image {
+    margin: 2rem auto;
+    display: block;
+  }
+}
 
 @media screen and (max-width: 500px) {
 
@@ -164,9 +186,25 @@ html {
   }
 
   .logo-header img {
-    height: 13rem;
+    height: 12rem;
   }
 
+  .hero-image img {
+    height: 20rem;
+  }
+
+  .hero-presentation h1 {
+    font-size: 3rem;
+    line-height: 4rem;
   }
   
+  .hero-presentation p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .proyectos-description p {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
