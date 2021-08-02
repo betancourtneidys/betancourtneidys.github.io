@@ -70,6 +70,8 @@ html {
   transition: 0.3s;
 }
 
+.sidenav a:hover, a:focus{
+  color: #F7CA18;
 }
 
 .sidenav .closebtn {
