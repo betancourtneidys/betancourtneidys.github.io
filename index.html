@@ -10,23 +10,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Neidys Betancourt</title>
 </head>
 <body>
   <header class="header">
+    <figure class="logo-header">
+      <img src="../img/logo.gif">
+    </figure>
     <nav>
       <ul class="header-nav">
-        <li class="header-nav__item"><img src="img/logo.gif" alt="Logo de Neidys Betancourt"></li>
-        <li class="header-nav__item"><a href="/"> Proyectos </a></li>
-        <li class="header-nav__item"><a href="/"> Testimonios </a></li>
-        <li class="header-nav__item"><a href="/"> Contacto </a></li>
-        <li class="download-button"><button>Descargar currículum</button></li>
+        <a href="javascript:void(0);" class="icon" onclick="openNav()">&#9776;</a>
+        <li class="header-nav__item"><a href="#">Inicio</a></li>
+        <li class="header-nav__item"><a href="#">Proyectos</a></li>
+        <li class="header-nav__item"><a href="#">Testimonios</a></li>
+        <li class="header-nav__item"><a href="#">Contacto</a></li>
       </ul>
     </nav>
-    <img class="header__img" src="./img/icons-menu.svg" alt="Menu">
   </header>
   <main>
-
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Inicio</a>
+      <a href="#">Proyectos</a>
+      <a href="#">Testimonios</a>
+      <a href="#">Contacto</a>
+    </div>
   </main>
   <footer>
 
