@@ -81,11 +81,35 @@ html {
   font-size: 3.6rem;
 }
 
-.header-nav .download-button {
-  margin-left: auto;
+.hero {
+  display: flex;
+  padding: 5rem;
+  background-color: rgba(243, 117, 226, 0.1);
 }
 
-.header-nav .download-button button {
+.hero-presentation h1 {
+  font-size: 6.4rem;
+  line-height: 8rem;
+}
+
+.hero-presentation h2 {
+  font-size: 6rem;
+  line-height: 7rem;
+  margin-top: 2rem;
+}
+
+.hero-presentation p {
+  font-size: 2.5rem;
+  line-height: 4rem;
+  margin: 2rem 0;
+}
+
+.hero-image img {
+  padding-left: 1rem;
+  height: 40rem;
+}
+
+.download-button {
   background: #EE3EC9;
   border-radius: 2rem;
   border: none;
@@ -96,21 +120,20 @@ html {
 }
 
 
-@media only screen and (max-width: 640px) {
+
+@media screen and (max-width: 700px) {
 
   .header {
-    align-items: center;
-    background-color: #292929;
-    display: flex;
-    list-style: none;
-    padding: 0.8rem;
     height: 13rem;
+    padding: 0.5rem;
+  }
+    
+	.logo-header img {
+	  height: 14rem;
   }
   
-  .header__img {
-    display: block;
-    width: 50px;
-    margin-left: auto
+	.header ul > li:first-of-type{
+		display:none;
   }
 
   .header-nav {
@@ -118,18 +141,31 @@ html {
   }
 
   .header-nav a {
+    margin-right: 1rem;
+  }
+
+
+@media screen and (max-width: 500px) {
+
+  .header {
+    height: 12rem;
+    padding: 1rem;
+  }
+
+  .header-nav li {
     display: none;
   }
 
-  .header-nav button {
-    display: none;
-  }
-
-  .header-nav .header-nav__item img {
+  .header-nav .icon {
+    font-weight: 900;
+    font-size: 2.7rem;
+    padding-right: 1rem;
     display: block;
   }
 
-  .download-button {
+  .logo-header img {
+    height: 13rem;
+  }
 
   }
   
