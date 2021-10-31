@@ -39,12 +39,11 @@ html {
 }
 
 .header-nav a:hover { 
-  text-decoration: underline;
   color: #F7CA18;
 }
 
 .icon {
-  display: none;
+	display: none;
 }
 
 .sidenav {
@@ -90,17 +89,19 @@ html {
 .hero-presentation h1 {
   font-size: 6.4rem;
   line-height: 8rem;
+  padding-right: 5rem;
 }
 
 .hero-presentation p {
   font-size: 2.5rem;
   line-height: 4rem;
   margin: 2rem 0;
+  padding-right: 5rem;
 }
 
 .hero-image img {
-  padding-left: 1rem;
   height: 40rem;
+  border-radius: 1rem;
 }
 
 .download-button {
@@ -113,33 +114,135 @@ html {
   padding: 1.2rem 2.4rem;
 }
 
+.proyectos-container {
+  background-color: rgba(186, 233, 248, 0.1);
+  width: 100%;
+  padding: 0 7.2rem;
+  margin: auto;
+}
+
+.proyectos-description {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 7.6rem;
+  justify-content: center;
+}
+
+.proyectos {
+  padding: 8rem 0;
+  margin: auto;
+}
+
+.proyectos-description h2{
+  width: 100%;
+  margin-right: 10.4rem;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  margin: 0 10.4rem 0 0;
+}
+
+.proyectos-description p {
+  width: 100%;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 4rem;
+}
+
+.niko-contents {
+  background-image: url("./img/platzi-video.png");
+  height: 61rem;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: cover;
+  position: relative;
+}
+
+.niko {
+  width: 55%;
+  position: relative;
+  top: 8rem;
+  right: 2.5rem;
+  padding: 6.4rem 2.4rem 2.4rem 2.4rem;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0.22px solid white;
+  border-radius: 4rem;
+  box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: #292929;
+}
+
+.niko h3 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.niko p {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  color: #292929;
+  width: 100%;
+}
 
 
-@media screen and (max-width: 700px) {
+.niko-btn1 {
+  color: white;
+  background: #FCCB4B;
+  padding: 1.2rem 2.4rem;
+  outline: none;
+  margin-right: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.niko-btn2 {
+  color: #FCCB4B;
+  border: 0.1rem solid #FCCB4B;
+  background: none;
+  padding: 1.2rem 2.4rem;
+  outline: none;
+  cursor: pointer;
+  margin-top: 8rem;
+}
+
+.ver-proyectos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: 0.2rem solid black;
+  outline: none;
+  cursor: pointer;
+  margin: 5.6rem auto   auto;
+  padding: 0.8rem 0.4rem;
+}
+
+.ver-proyectos p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 770px) {
 
   .header {
     height: 13rem;
     padding: 0.5rem;
   }
-    
+
 	.logo-header img {
 	  height: 14rem;
-  }
-  
+	}
+
 	.header ul > li:first-of-type{
 		display:none;
-  }
-
-  .header-nav {
-    padding: 0;
-  }
+	}
 
   .header-nav a {
     margin-right: 1rem;
   }
 
   .hero {
-    padding: 2rem;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -155,7 +258,7 @@ html {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
 
   .header {
     height: 12rem;
@@ -185,7 +288,7 @@ html {
     font-size: 3rem;
     line-height: 4rem;
   }
-  
+
   .hero-presentation p {
     font-size: 2rem;
     line-height: 3rem;
