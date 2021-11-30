@@ -25,7 +25,7 @@ html {
 
 .header-nav {
 	display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .header-nav li {
@@ -115,79 +115,67 @@ html {
 }
 
 .proyectos-container {
-  background-color: rgba(186, 233, 248, 0.1);
-  width: 100%;
-  padding: 0 7.2rem;
-  margin: auto;
+  margin: 30rem;
 }
 
 .proyectos-description {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 7.6rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 5rem;
+  margin: 30px;
 }
 
-.proyectos {
-  padding: 8rem 0;
-  margin: auto;
-}
-
-.proyectos-description h2{
-  width: 100%;
-  margin-right: 10.4rem;
+.proyectos-description h2 {
   font-weight: 700;
   font-size: 4.8rem;
-  line-height: 5.6rem;
-  margin: 0 10.4rem 0 0;
+  padding-right: 10px;
+  grid-column: 1 / 2;
 }
 
 .proyectos-description p {
-  width: 100%;
   font-size: 2.4rem;
   font-weight: 400;
-  line-height: 4rem;
+  grid-column: 2 / 3;
+  margin-left: 30px;
 }
 
-.niko-contents {
-  background-image: url("./img/platzi-video.png");
-  height: 61rem;
-  background-repeat: no-repeat;
-  margin: auto;
-  background-size: cover;
-  position: relative;
+.marvel-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 150px auto 150px;
+  padding: 0 15rem;
+  width: 100%;
 }
 
-.niko {
-  width: 55%;
-  position: relative;
-  top: 8rem;
-  right: 2.5rem;
-  padding: 6.4rem 2.4rem 2.4rem 2.4rem;
+.marvel-img {
+  grid-column: 1 / 3;
+  grid-row: 1 / 4;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.marvel {
+  border-radius: 4rem;
+  grid-column: 1;
+  grid-row: 2 / 3;
   background-color: rgba(255, 255, 255, 1);
   border: 0.22px solid white;
   border-radius: 4rem;
   box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   color: #292929;
+  padding: 3rem;
 }
 
-.niko h3 {
-  font-size: 2.4rem;
-  line-height: 3.2rem;
-}
-
-.niko p {
-  font-size: 2.4rem;
-  line-height: 4rem;
+.marvel p {
+  font-size: 2rem;
+  line-height: 2.2rem;
   font-weight: 400;
   color: #292929;
-  width: 100%;
 }
 
-
-.niko-btn1 {
+.marvel-btn1 {
   color: white;
-  background: #FCCB4B;
+  background: #20273f;
   padding: 1.2rem 2.4rem;
   outline: none;
   margin-right: 1.6rem;
@@ -195,9 +183,9 @@ html {
   cursor: pointer;
 }
 
-.niko-btn2 {
-  color: #FCCB4B;
-  border: 0.1rem solid #FCCB4B;
+.marvel-btn2 {
+  color: #1f294b;
+  border: 0.1rem solid #1f294b;
   background: none;
   padding: 1.2rem 2.4rem;
   outline: none;
@@ -234,9 +222,9 @@ html {
 	  height: 14rem;
 	}
 
-	.header ul > li:first-of-type{
-		display:none;
-	}
+  .header-nav {
+    gap: 0;
+  }
 
   .header-nav a {
     margin-right: 1rem;
@@ -256,6 +244,28 @@ html {
     margin: 2rem auto;
     display: block;
   }
+
+  .marvel {
+    padding: 1rem;
+    
+  }
+  .marvel p {
+    font-size: 1.5rem;
+  }
+
+  .marvel-contents {
+    grid-template-rows: 50px auto 50px;
+    padding: 0 5rem;
+  }
+  .marvel-btn2{
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .marvel-btn1 {
+    padding: 0.5rem;
+    margin-right: 1rem;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -294,8 +304,46 @@ html {
     line-height: 3rem;
   }
 
-  .proyectos-description p {
+  .proyectos-container {
+    margin: 0;
+  }
+
+  .proyectos-description {
+    margin: 2rem;
+  }
+
+  .proyectos-description h2 {
     font-size: 2rem;
-    line-height: 3rem;
+  }
+
+  .proyectos-description p {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .marvel-contents {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
+    margin: 2rem;
+    border-radius: 4rem;
+    box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 2rem;
+  }
+  .marvel-img {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    padding: 0px;
+  }
+  .marvel {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    border: none;
+    box-shadow: none;
+  }
+  .marvel-btn2{
+    margin: 2rem 0;
+  }
+  .marvel-btn1 {
+    margin: 2rem;
   }
 }
