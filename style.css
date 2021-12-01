@@ -101,12 +101,12 @@ html {
 
 .hero-image img {
   height: 40rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 
 .download-button {
   background: #EE3EC9;
-  border-radius: 2rem;
+  border-radius: 0.8rem;
   border: none;
   color: white;
   cursor: pointer;
@@ -155,12 +155,11 @@ html {
 }
 
 .marvel {
-  border-radius: 4rem;
   grid-column: 1;
   grid-row: 2 / 3;
   background-color: rgba(255, 255, 255, 1);
   border: 0.22px solid white;
-  border-radius: 4rem;
+  border-radius: 1rem;
   box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   color: #292929;
   padding: 3rem;
@@ -202,7 +201,7 @@ html {
   border: 0.2rem solid black;
   outline: none;
   cursor: pointer;
-  margin: 5.6rem auto   auto;
+  margin: 5rem auto;
   padding: 0.8rem 0.4rem;
 }
 
