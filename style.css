@@ -14,9 +14,9 @@ html {
   background-color: #292929;
   display: flex;
   height: 15rem;
+  justify-content: space-between;
   overflow: hidden;
   padding: 3rem;
-  justify-content: space-between
 }
 
 .logo-header img {
@@ -25,7 +25,7 @@ html {
 
 .header-nav {
 	display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .header-nav li {
@@ -39,7 +39,7 @@ html {
 }
 
 .header-nav a:hover { 
-  color: #F7CA18;
+  color: #e6adc9;
 }
 
 .icon {
@@ -54,30 +54,30 @@ html {
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.2s;
-  padding: 4rem 0;
+  padding: 3rem 0;
   box-shadow: 0.2rem 0.8rem 2rem rgba(0, 0, 0, 0.24);
-  border-radius: 2rem 0 0 2rem;
+  border-radius: 0 0 0 0.5rem;
   width: 0;
 }
 
 .sidenav a {
   padding: 0.8rem 0.8rem 0.8rem 3.2rem;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #292929;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover, a:focus{
-  color: #F7CA18;
+  color: #e6adc9;
 }
 
 .sidenav .closebtn {
   position: absolute;
   top: 0;
-  right: 2.5rem;
-  font-size: 3.6rem;
+  right: 2rem;
+  font-size: 3rem;
 }
 
 .hero {
@@ -106,7 +106,7 @@ html {
 
 .download-button {
   background: #EE3EC9;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   border: none;
   color: white;
   cursor: pointer;
@@ -143,7 +143,7 @@ html {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 150px auto 150px;
-  padding: 0 5rem;
+  padding: 0 15rem;
   width: 100%;
 }
 
@@ -157,40 +157,43 @@ html {
 .marvel {
   grid-column: 1;
   grid-row: 2 / 3;
+  display: flex;
+  flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 1);
   border: 0.22px solid white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   box-shadow: 0 1.4rem 2.8rem rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   color: #292929;
   padding: 3rem;
+  align-content: space-around;
 }
 
 .marvel p {
-  font-size: 2rem;
-  line-height: 2.2rem;
-  font-weight: 400;
-  color: #292929;
-  padding-bottom: 4rem;
+  font-size: 2.2rem;
+  width: 100%;
+}
+
+.btn {
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 4.2rem;
+  line-height: 2rem;
+  padding: 1rem;
+  text-decoration: none;
 }
 
 .marvel-btn1 {
   color: white;
   background: #20273f;
-  padding: 1.2rem 2.4rem;
-  outline: none;
-  margin-right: 1.6rem;
-  border: none;
-  cursor: pointer;
 }
 
 .marvel-btn2 {
   color: #1f294b;
   border: 0.1rem solid #1f294b;
-  background: none;
-  padding: 1.2rem 2.4rem;
-  outline: none;
-  cursor: pointer;
-  margin-top: 8rem;
+  margin-left: 3rem;
 }
 
 .ver-proyectos {
@@ -198,17 +201,44 @@ html {
   align-items: center;
   gap: 1rem;
   background: none;
-  border: 0.2rem solid black;
+  border: 0.2rem solid #1f294b;
   outline: none;
   cursor: pointer;
   margin: 5rem auto;
   padding: 0.8rem 0.4rem;
+  border-radius: 0.5rem;
 }
 
 .ver-proyectos p {
   font-size: 1.6rem;
   line-height: 2.4rem;
   font-weight: 700;
+  color: #1f294b;
+}
+
+.footer-container {
+  display: flex;
+  background: #292929;
+  height: 12rem;
+  padding: 2rem 4rem;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.p-footer {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-icon img {
+  width: 3rem;
 }
 
 @media screen and (max-width: 770px) {
@@ -243,6 +273,15 @@ html {
   .hero-presentation button, .hero-image {
     margin: 2rem auto;
     display: block;
+  }
+
+  .proyectos-description h2 {
+    font-size: 3rem;
+  }
+
+  .proyectos-description p {
+    font-size: 2rem;
+    margin-left: 1rem;
   }
 
   .marvel {
@@ -310,14 +349,20 @@ html {
 
   .proyectos-description {
     margin: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
   }
 
   .proyectos-description h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    padding: 0;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
   }
 
   .proyectos-description p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 0;
   }
   .marvel-contents {
@@ -340,10 +385,12 @@ html {
     border: none;
     box-shadow: none;
   }
-  .marvel-btn2{
-    margin: 2rem 0;
+
+  .footer-container {
+    padding: 1rem 2rem;
   }
-  .marvel-btn1 {
-    margin: 2rem;
+  
+  .p-footer {
+    font-size: 1.6rem;
   }
 }
